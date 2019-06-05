@@ -1,0 +1,18 @@
+<div class="foooooo" ...attributes>foo bar coponent content</div>
+
+<hr />
+
+<h1>Passing attrs through:</h1>
+
+<h2>Simple AngleBrackets</h2>
+<BazBar ...attributes />
+
+<hr />
+<h2>Component Keyword</h2>
+{{component "baz-bar" attributes}}
+
+<hr />
+<h2>Invoke component with let block</h2>
+{{#let (component "baz-bar") as |DynamicComponent|}}
+  <DynamicComponent />
+{{/let}}
